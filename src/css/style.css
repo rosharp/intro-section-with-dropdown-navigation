@@ -11,6 +11,8 @@ h2,
 h3,
 p {
   margin: 0;
+  font-family: "Epilogue", sans-serif;
+  line-height: 1.5;
 }
 
 h1,
@@ -19,6 +21,7 @@ h3 {
   font-family: "Epilogue", sans-serif;
   font-weight: 700;
   line-height: 1;
+  font-size: 4rem;
 }
 
 h2,
@@ -37,14 +40,25 @@ a {
   text-decoration: inherit;
 }
 
-.main-hero-img {
-  width: 100%;
+.App {
+  background: hsl(0deg, 0%, 98%);
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  background: hsl(0deg, 0%, 98%);
+.black-btn {
+  background: hsl(0deg, 0%, 8%);
+  color: hsl(0deg, 0%, 98%);
+  border: 3px solid hsl(0deg, 0%, 8%);
+  border-radius: 10px;
+  padding: 0.7rem 2rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  outline: inherit;
+  transition: 150ms ease-in-out;
+}
+.black-btn:hover {
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 8%);
 }
 
 nav {
@@ -60,6 +74,7 @@ nav .logo-img {
   max-width: 5rem;
   -o-object-fit: contain;
      object-fit: contain;
+  margin: 0 2rem;
 }
 nav::after {
   content: "";
@@ -123,4 +138,39 @@ nav ul ul li {
 }
 nav ul ul li a {
   line-height: 50px;
+}
+
+@media (min-width: 800px) {
+  .body {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    max-width: 75rem;
+    padding-inline: 5rem;
+  }
+  .body .black-btn {
+    margin: 3rem 0;
+  }
+  .body .body-text h1 {
+    margin-bottom: 3rem;
+    padding-right: 5rem;
+  }
+  .body .body-text p {
+    color: hsl(0deg, 0%, 41%);
+    font-size: 1.1rem;
+    max-width: 50rem;
+    margin-right: 5rem;
+  }
+  .body .sponsors-img > * {
+    -webkit-margin-end: 1rem;
+            margin-inline-end: 1rem;
+  }
+  .body .main-hero-img {
+    min-width: 30rem;
+    max-height: 45rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }/*# sourceMappingURL=style.css.map */
