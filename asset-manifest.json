@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.da7cc8c8.css",
-    "main.js": "/portfolio/static/js/main.5df1e49e.js",
-    "static/js/787.169f9516.chunk.js": "/portfolio/static/js/787.169f9516.chunk.js",
-    "index.html": "/portfolio/index.html",
-    "static/media/icon-close-menu.svg": "/portfolio/static/media/icon-close-menu.3f33fd68b142340b7eb8.svg",
-    "static/media/icon-menu.svg": "/portfolio/static/media/icon-menu.863803c904916606b7a1.svg",
-    "main.da7cc8c8.css.map": "/portfolio/static/css/main.da7cc8c8.css.map",
-    "main.5df1e49e.js.map": "/portfolio/static/js/main.5df1e49e.js.map",
-    "787.169f9516.chunk.js.map": "/portfolio/static/js/787.169f9516.chunk.js.map"
+    "main.css": "/intro-section-with-dropdown-navigation/static/css/main.b6075079.css",
+    "main.js": "/intro-section-with-dropdown-navigation/static/js/main.3eb9d810.js",
+    "static/js/787.169f9516.chunk.js": "/intro-section-with-dropdown-navigation/static/js/787.169f9516.chunk.js",
+    "index.html": "/intro-section-with-dropdown-navigation/index.html",
+    "static/media/icon-close-menu.svg": "/intro-section-with-dropdown-navigation/static/media/icon-close-menu.3f33fd68b142340b7eb8.svg",
+    "static/media/icon-menu.svg": "/intro-section-with-dropdown-navigation/static/media/icon-menu.863803c904916606b7a1.svg",
+    "main.b6075079.css.map": "/intro-section-with-dropdown-navigation/static/css/main.b6075079.css.map",
+    "main.3eb9d810.js.map": "/intro-section-with-dropdown-navigation/static/js/main.3eb9d810.js.map",
+    "787.169f9516.chunk.js.map": "/intro-section-with-dropdown-navigation/static/js/787.169f9516.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da7cc8c8.css",
-    "static/js/main.5df1e49e.js"
+    "static/css/main.b6075079.css",
+    "static/js/main.3eb9d810.js"
   ]
 }
