@@ -1,5 +1,18 @@
 import React from "react";
 import './css/style.css';
+import mainHeroImgDesktop from "./images/image-hero-desktop.png";
+import mainHeroImgMobile from "./images/image-hero-mobile.png";
+import logo from "./images/logo.svg";
+import iconArrowUp from "./images/icon-arrow-up.svg";
+import iconArrowDown from "./images/icon-arrow-down.svg";
+import iconToDo from "./images/icon-todo.svg";
+import iconPlanning from "./images/icon-planning.svg";
+import iconCalendar from "./images/icon-calendar.svg";
+import iconReminders from "./images/icon-reminders.svg";
+import clientDatabizImg from "./images/client-databiz.svg";
+import clientMeetImg from "./images/client-meet.svg";
+import clientAudiophileImg from "./images/client-audiophile.svg";
+import clientMakerImg from "./images/client-maker.svg";
 
 function App() {
   const [isActive, setActive] = React.useState(false);
@@ -33,24 +46,24 @@ function App() {
         </button>
 
         <nav className="navbar" data-visible={isActive ? "false" : "true"}>
-          <img className="logo-img" src="/images/logo.svg" />
+          <img className="logo-img" src={logo} />
           <ul className="main-nav">
             <li onMouseEnter={toggleFeatures} onMouseLeave={toggleFeatures}>
               <a className="nav-anchor" aria-controls="features-list" onClick={toggleFeatures}>
                 Features
-                <span><img className="nav-arrow-icon" src={isToggledFeatures ? "/images/icon-arrow-up.svg" : "/images/icon-arrow-down.svg"} /></span>
+                <span><img className="nav-arrow-icon" src={isToggledFeatures ? iconArrowUp : iconArrowDown } /></span>
               </a>
               <ul className="features-list" data-visible={isToggledFeatures ? "true" : "false"}>
-                <li><a href='#'><span><img src="/images/icon-todo.svg" /></span>Todo List</a></li>
-                <li><a href='#'><span><img src="/images/icon-calendar.svg" /></span>Calendar</a></li>
-                <li><a href='#'><span><img src="/images/icon-reminders.svg" /></span>Reminders</a></li>
-                <li><a href='#'><span><img src="/images/icon-planning.svg" /></span>Planning</a></li>
+                <li><a href='#'><span><img src={iconToDo} /></span>Todo List</a></li>
+                <li><a href='#'><span><img src={iconCalendar} /></span>Calendar</a></li>
+                <li><a href='#'><span><img src={iconReminders} /></span>Reminders</a></li>
+                <li><a href='#'><span><img src={iconPlanning} /></span>Planning</a></li>
               </ul>
             </li>
             <li onMouseEnter={toggleCompany} onMouseLeave={toggleCompany}>
               <a className="nav-anchor" aria-controls="company-list" onClick={toggleCompany}>
                 Company
-                <span><img className="nav-arrow-icon" src={isToggledCompany ? "/images/icon-arrow-up.svg" : "/images/icon-arrow-down.svg"} /></span>
+                <span><img className="nav-arrow-icon" src={isToggledCompany ? iconArrowUp : iconArrowDown} /></span>
               </a>
               <ul className="company-list" data-visible={isToggledCompany ? "true" : "false"}>
                 <li><a href='#'>History</a></li>
@@ -70,8 +83,8 @@ function App() {
         <div className="body" >
 
           <picture>
-            <source srcSet="images/image-hero-mobile.png" media="(max-width: 1000px)" />
-            <img className="main-hero-img" src="images/image-hero-desktop.png" />
+            <source srcSet={mainHeroImgMobile} media="(max-width: 1000px)" />
+            <img className="main-hero-img" src={mainHeroImgDesktop} />
           </picture>
 
           <div className="text-block">
@@ -83,10 +96,10 @@ function App() {
               </p>
               <button className="black-btn">Learn more</button>
               <div className="sponsors-img">
-                <img src="/images/client-databiz.svg" />
-                <img src="/images/client-audiophile.svg" />
-                <img src="/images/client-meet.svg" />
-                <img src="/images/client-maker.svg" />
+                <img src={clientDatabizImg}/>
+                <img src={clientAudiophileImg} />
+                <img src={clientMeetImg} />
+                <img src={clientMakerImg} />
               </div>
             </div>
 
